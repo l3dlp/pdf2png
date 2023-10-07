@@ -10,28 +10,29 @@ Got a heap of PDF files and need PNG previews? This script's got you covered. It
 
 ### Prerequisites
 
-ImageMagick (If you don't have it, <code>sudo apt-get install imagemagick</code> should sort you out).
+- ImageMagick (If you don't have it, <code>sudo apt-get install imagemagick</code> should sort you out).
+- Install the `pdf2png` bash script in your local `bin` with good rights (`chmod 700 pdf2png` could be a good safekeeper).
 
 ### Usage
 
 <strong>To convert all PDFs in the current directory:</strong>
 ```bash
-./convert.sh
+./pdf2png
 ```
 
 <strong>To convert all PDFs in a specific directory:</strong>
 ```bash
-./convert.sh /path/to/the/directory
+pdf2png /path/to/the/directory
 ```
 
 <strong>To convert all PDFs in a specific directory and all its subdirectories:</strong>
 ```bash
-./convert.sh /path/to/the/directory -r
+pdf2png /path/to/the/directory -r
 ```
 
 <strong>To convert all PDFs in the current directory and all its subdirectories:</strong>
 ```bash
-./convert.sh . -r
+pdf2png . -r
 ```
 
 ### Wanna Contribute?
