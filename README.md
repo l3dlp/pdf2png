@@ -17,7 +17,7 @@ Got a heap of PDF files and need PNG previews? This script's got you covered. It
 
 <strong>To convert all PDFs in the current directory:</strong>
 ```bash
-./pdf2png
+pdf2png
 ```
 
 <strong>To convert all PDFs in a specific directory:</strong>
