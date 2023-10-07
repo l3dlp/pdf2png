@@ -31,7 +31,7 @@ convert_pdf_to_png() {
 # Si l'option "-r" est fournie, on lance la révursivité
 if [[ "$recursive" == "-r" ]]; then
     # ... donc on parcourt tous les sous-répertoires
-    find "$start_dir" -type d -exec bash -c 'convert_pdf_to_png "$0"' {} \;
+    find "$start_dir" -type d -exec bash -c 'pdf2png "$0"' {} \;
 else
     # Sinon on convertit seulement dans le répertoire de départ
     convert_pdf_to_png "$start_dir"
